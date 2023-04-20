@@ -9,7 +9,8 @@ namespace Evstr.Obstacles
     {
         private float _xPosition = 3.0f;
         private float _yPosition;
-        private float _yBoards = 2.7f;
+        private float _yBoardDown = -5.0f;
+        private float _yBoardUp = -2.0f;
 
 
         private void Start()
@@ -23,7 +24,7 @@ namespace Evstr.Obstacles
             {
                 yield return new WaitForSeconds(1.6f);
                 GameObject obstacle = ObjectPool.SharedInstance.GetPooledObjectObstacle();
-                _yPosition = Random.Range(-_yBoards, _yBoards);
+                _yPosition = Random.Range(_yBoardDown, _yBoardUp);
                 if (obstacle != null)
                 {
                     obstacle.transform.position = new Vector2(_xPosition, _yPosition);

@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8340751573974296720}
   - component: {fileID: -8738941312160342542}
   - component: {fileID: 4263048095313093214}
-  - component: {fileID: 8846362927202434295}
   - component: {fileID: 625643095050057444}
+  - component: {fileID: 4140775206014450011}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 73586694277968511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.5, y: -0.3, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 93f20e7d91bca40409003f20814804c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e84247e11f3704a5a86b23908467c683, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -113,51 +113,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _plus10: {fileID: 4497176688685686022, guid: 9067e191ba7eb499883d6cca7c6ddf86, type: 3}
---- !u!60 &8846362927202434295
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73586694277968511}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.8, y: 1.95}
-    newSize: {x: 2.8, y: 1.95}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 1.17, y: -0.445}
-      - {x: 1.3199999, y: -0.295}
-      - {x: 1.4, y: -0.16499999}
-      - {x: 1.4, y: 0.024999999}
-      - {x: 1.3399999, y: 0.185}
-      - {x: 1.0799999, y: 0.39499998}
-      - {x: 0.85999995, y: 0.515}
-      - {x: 0, y: 0.515}
-      - {x: -0.19, y: 0.84499997}
-      - {x: -0.65999997, y: 0.84499997}
-      - {x: -0.69, y: 0.79499996}
-      - {x: -0.69, y: 0.205}
-      - {x: -0.61, y: 0.13499999}
-      - {x: -0.69, y: 0.044999998}
-      - {x: -0.69, y: -0.885}
-      - {x: -0.64, y: -0.945}
-      - {x: -0.26, y: -0.945}
-      - {x: -0.17999999, y: -0.885}
-      - {x: -0.01, y: -0.60499996}
-      - {x: 0.84999996, y: -0.615}
 --- !u!50 &625643095050057444
 Rigidbody2D:
   serializedVersion: 4
@@ -179,3 +134,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &4140775206014450011
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73586694277968511}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.885
